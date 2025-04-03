@@ -27,14 +27,12 @@ app.post('/create-checkout-session', async (req, res) => {
         {
           key: 'athlete_name',
           label: { type: 'custom', custom: 'Athlete Name' },
-          type: 'text',
-          required: true
+          type: 'text'
         },
         {
           key: 'athlete_sport',
           label: { type: 'custom', custom: 'Athlete Sport' },
-          type: 'text',
-          required: true
+          type: 'text'
         }
       ],
       success_url: 'https://vidasports.webflow.io/success',
