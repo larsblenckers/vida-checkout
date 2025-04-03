@@ -17,8 +17,8 @@ app.post('/create-checkout-session', async (req, res) => {
         {
           price_data: {
             product: 'prod_S3zqjYvIlnzzQi',
-            unit_amount: 245000,
-            currency: 'eur'
+            unit_amount: 250000,
+            currency: 'usd'
           },
           quantity: 1,
         },
