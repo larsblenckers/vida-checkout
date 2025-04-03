@@ -15,7 +15,11 @@ app.post('/create-checkout-session', async (req, res) => {
       mode: 'payment',
       line_items: [
         {
-          price: 'price_XXXXXXX', // Replace with your actual Price ID from Stripe
+          price_data: {
+            product: 'prod_S3zqjYvIlnzzQi',
+            unit_amount: 245000,
+            currency: 'eur'
+          },
           quantity: 1,
         },
       ],
